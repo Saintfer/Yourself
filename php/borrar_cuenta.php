@@ -28,15 +28,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $conn->close();
     }
     
-    // Destruir la sesión
+    // Destruir la sesión correctamente
+    $_SESSION = [];
     session_destroy();
-    session_set_cookie_params([
-        'lifetime' => -1,
-        'path' => '/',
-    ]);
-    
-    // Redirigir con mensaje de éxito (que puede ser manejado por login.php)
-    header('Location: ../pages/login.php?msg=cuenta_borrada');
+
+    // Redirigir al menú principal sin sesión
+    header('Location: ../index.php');
     exit;
 }
 

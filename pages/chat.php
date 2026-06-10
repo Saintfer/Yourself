@@ -590,16 +590,17 @@ html, body {
 .c-menu-btn:hover { background: rgba(124,58,237,.28); color: #fff; }
 .c-overlay {
   display: none; position: fixed; inset: 0; z-index: 90;
-  background: rgba(0,0,0,.65); cursor: pointer;
-  border: none;
+  background: rgba(0,0,0,.80); cursor: pointer;
+  border: none; -webkit-tap-highlight-color: transparent;
 }
 @media (max-width: 860px) {
   .c-sidebar {
     position: fixed; left: 0; top: 0; z-index: 100;
+    width: 82vw; min-width: unset; max-width: 320px;
     height: 100vh; height: 100dvh;
     transform: translateX(-100%);
     transition: transform .3s cubic-bezier(.4,0,.2,1);
-    box-shadow: 8px 0 40px rgba(0,0,0,.5);
+    box-shadow: 8px 0 40px rgba(0,0,0,.7);
   }
   .c-menu-btn { display: inline-flex; }
   .c-nav-toggle:checked ~ .chat-app .c-sidebar { transform: translateX(0); }

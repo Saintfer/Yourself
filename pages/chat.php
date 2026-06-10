@@ -604,7 +604,10 @@ html, body {
   }
   .c-menu-btn { display: inline-flex; }
   .c-nav-toggle:checked ~ .chat-app .c-sidebar { transform: translateX(0); }
-  .c-nav-toggle:checked ~ .c-overlay { display: block; }
+  .c-nav-toggle:checked ~ .c-overlay {
+    display: block;
+    left: 82vw; /* solo cubre la parte fuera del sidebar */
+  }
   .c-messages { padding: 22px 16px 12px; }
   .c-input-wrap { padding: 10px 14px 14px; }
 }

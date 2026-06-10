@@ -1,0 +1,33 @@
+# ───────────────────────────────────────────────
+#  Yourself · Archivos que NUNCA deben subirse a Git
+# ───────────────────────────────────────────────
+
+# Variables de entorno (contienen API keys y contraseñas)
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+error_log
+
+# Archivos temporales del editor
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# PHP
+vendor/
+composer.lock
+
+# Backups y dumps de DB con datos reales
+*.sql.bak
+*-dump.sql
+backups/

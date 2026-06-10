@@ -590,12 +590,13 @@ html, body {
 .c-menu-btn:hover { background: rgba(124,58,237,.28); color: #fff; }
 .c-overlay {
   display: none; position: fixed; inset: 0; z-index: 90;
-  background: rgba(0,0,0,.55); backdrop-filter: blur(4px); cursor: pointer;
+  background: rgba(0,0,0,.65); cursor: pointer;
   border: none;
 }
 @media (max-width: 860px) {
   .c-sidebar {
     position: fixed; left: 0; top: 0; z-index: 100;
+    height: 100vh; height: 100dvh;
     transform: translateX(-100%);
     transition: transform .3s cubic-bezier(.4,0,.2,1);
     box-shadow: 8px 0 40px rgba(0,0,0,.5);

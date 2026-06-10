@@ -384,6 +384,7 @@ html, body {
   flex: 1; display: flex; flex-direction: column;
   align-items: center; justify-content: center;
   gap: 26px; padding: 40px 24px; text-align: center;
+  overflow-y: auto; min-height: 0;
 }
 .c-welcome-owl {
   width: 80px; height: 80px;

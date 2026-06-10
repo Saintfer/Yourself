@@ -85,7 +85,7 @@ $tips = [
 ];
 $tip = $tips[date('N') - 1]; 
 
-$today = date('l, j \d\e F \d\e Y');
+$today = fechaEspanol();
 ?>
 <!DOCTYPE html>
 <html lang="es">

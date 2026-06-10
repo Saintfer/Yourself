@@ -94,3 +94,17 @@ if (!defined('GEMINI_ENDPOINT')) {
         . GEMINI_MODEL . ':generateContent?key=' . GEMINI_API_KEY
     );
 }
+
+// ─── Fecha en español ───
+if (!function_exists('fechaEspanol')) {
+    function fechaEspanol(int $timestamp = 0): string {
+        if (!$timestamp) $timestamp = time();
+        $dias   = ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
+        $meses  = ['enero','febrero','marzo','abril','mayo','junio',
+                   'julio','agosto','septiembre','octubre','noviembre','diciembre'];
+        return $dias[(int)date('w',$timestamp)] . ', ' .
+               (int)date('j',$timestamp) . ' de ' .
+               $meses[(int)date('n',$timestamp)-1] . ' de ' .
+               date('Y',$timestamp);
+    }
+}

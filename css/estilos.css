@@ -995,6 +995,19 @@ textarea.input-field { resize: vertical; min-height: 100px }
   .chat-sidebar { display: none }
   .chat-messages  { padding: 14px }
   .chat-input-area { padding: 10px 14px 14px }
+
+  /* Topbar: ocultar fecha, evitar que el botón se parta */
+  .topbar-date { display: none }
+  .topbar-actions { gap: 8px }
+  .topbar-actions .btn { white-space: nowrap; font-size: .78rem; padding: 6px 12px }
+
+  /* Navbar: truncar saludo largo */
+  .navbar-greeting {
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 @media (max-width: 540px) {
   .stats-row { grid-template-columns: 1fr }
@@ -1002,6 +1015,13 @@ textarea.input-field { resize: vertical; min-height: 100px }
   .mood-btn  { min-width: 56px; padding: 10px 8px }
   .auth-card { padding: 22px 16px }
   .checkin-card { padding: 16px }
+
+  /* Topbar más compacto */
+  .topbar { padding: 10px 12px }
+  .topbar-title { font-size: 1rem }
+
+  /* Navbar: ocultar saludo en pantallas muy pequeñas */
+  .navbar-greeting { display: none }
 }
 
 

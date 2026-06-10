@@ -125,7 +125,7 @@ $mood_top_info = $mood_top_key ? ($estados[$mood_top_key] ?? $estados['normal'])
       <span class="topbar-title">Mi Progreso</span>
     </div>
     <div class="topbar-actions">
-      <span class="topbar-date"><?= date('l, j \d\e F \d\e Y') ?></span>
+      <span class="topbar-date"><?= fechaEspanol() ?></span>
       <a href="chat.php" class="btn btn-primary btn-sm">🦉 Hablar con Nix</a>
     </div>
   </div>

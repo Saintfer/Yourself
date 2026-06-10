@@ -37,7 +37,7 @@ require_once __DIR__ . '/php/crisis_config.php';
   </ul>
   <div class="navbar-actions">
     <?php if ($logueado): ?>
-      <span style="color:var(--text-l);font-size:.9rem;font-weight:600">Hola, <?= htmlspecialchars($nombre) ?> 👋</span>
+      <span class="navbar-greeting" style="color:var(--text-l);font-size:.9rem;font-weight:600">Hola, <?= htmlspecialchars($nombre) ?> 👋</span>
       <a href="php/logout.php" class="btn btn-outline btn-sm">Salir</a>
     <?php else: ?>
       <a href="pages/login.php"   class="btn btn-outline btn-sm">Iniciar sesión</a>

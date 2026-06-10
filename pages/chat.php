@@ -131,6 +131,7 @@ $semana = date('Y-m-d', strtotime('-7 days'));
 
 html, body {
   height: 100%;
+  height: 100dvh;
   width: 100%;
   overflow: hidden;
   font-family: 'Nunito', sans-serif;
@@ -145,9 +146,10 @@ html, body {
 
 .chat-app {
   display: flex;
-  flex-direction: row;       
+  flex-direction: row;
   width: 100vw;
   height: 100vh;
+  height: 100dvh;
   overflow: hidden;
 }
 
@@ -157,6 +159,7 @@ html, body {
   min-width: 260px;
   max-width: 260px;
   height: 100vh;
+  height: 100dvh;
   background: #0b0d17;
   border-right: 1px solid rgba(255,255,255,.07);
   display: flex;
@@ -338,6 +341,7 @@ html, body {
   flex: 1;
   min-width: 0;
   height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   overflow: hidden;

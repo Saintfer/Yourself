@@ -1,5 +1,8 @@
 FROM php:8.2-apache
 
+# Fix: desactivar mpm_event y dejar solo mpm_prefork (evita conflicto MPM)
+RUN a2dismod mpm_event || true && a2enmod mpm_prefork
+
 # Instalar extensión mysqli para MySQL
 RUN docker-php-ext-install mysqli
 
